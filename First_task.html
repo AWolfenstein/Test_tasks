@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>First Task</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" name="name" id="name_input" value="Xxxx">
+    <script>
+        name_input.oninput = function() {
+
+            if (name_input.defaultValue !== name_input.value) {
+                name_input.className = "red"
+            } else {
+                name_input.className = ""
+            }
+        }
+    </script>
+</body>
+
+</html>
