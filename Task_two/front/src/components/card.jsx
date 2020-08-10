@@ -18,7 +18,7 @@ const Cards = (props) => {
                 </Card.Title>
                 <Card.Text>Email: {user.email}</Card.Text>
                 <Button variant="danger" onClick={() =>props.deleteUser(index)}>
-                  Delete
+                  Удалить
                 </Button>
               </Card.Body>
             </Card>

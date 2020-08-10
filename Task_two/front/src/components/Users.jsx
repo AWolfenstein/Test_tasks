@@ -27,13 +27,13 @@ const Users = (props) => {
 
   return (
     <div>
-      <h1>Users</h1>
+      <h1>Сотрудники</h1>
       <Button
         variant="primary"
         style={{ marginBottom: 20 }}
         onClick={() => setShow(true)}
       >
-        Add new User
+       Добавить нового сотрудника
       </Button>
       <Cards user={usersArray} deleteUser={deleteUser}></Cards>
       <ModalAddUser

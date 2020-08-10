@@ -14,7 +14,6 @@ const mapStateToProps = () => ({
 const mapDispatchToProps = dispatch =>
   bindActionCreators(
     {
-      changePage: () => push('/about-us')
     },
     dispatch
   )

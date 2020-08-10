@@ -27,22 +27,22 @@ const ModalAddUser = (props) => {
     >
       <Modal.Header closeButton>
         <Modal.Title id="example-custom-modal-styling-title">
-          Add New User
+          Новый сотрудник
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <InputGroup className="mb-3">
           <InputGroup.Prepend>
-            <InputGroup.Text>First and last name</InputGroup.Text>
+            <InputGroup.Text>Имя и Фамилия</InputGroup.Text>
           </InputGroup.Prepend>
           <FormControl
-            placeholder="First Name"
-            aria-label="First Name"
+            placeholder="Имя"
+            aria-label="Имя"
             onInput={(e) => setFirstName(e.target.value)}
           />
           <FormControl
-            placeholder="Last Name"
-            aria-label="Last Name"
+            placeholder="Фамилия"
+            aria-label="Фамилия"
             onInput={(e) => setLastName(e.target.value)}
           />
         </InputGroup>
@@ -57,7 +57,7 @@ const ModalAddUser = (props) => {
             <InputGroup.Text id="basic-addon2">@e-mail</InputGroup.Text>
           </InputGroup.Append>
         </InputGroup>
-        <label htmlFor="basic-url">Your avatar URL</label>
+        <label htmlFor="basic-url"> URL картинки</label>
         <InputGroup className="mb-3">
           <InputGroup.Prepend>
             <InputGroup.Text id="basic-addon3">url</InputGroup.Text>
@@ -71,9 +71,9 @@ const ModalAddUser = (props) => {
       </Modal.Body>
       <Modal.Footer>
         <Button variant="secondary" onClick={() => props.setShow(false)}>
-          Close
+          Закрыть
         </Button>
-        <Button onClick={() => changeInput()}>Add</Button>
+        <Button onClick={() => changeInput()}>Добавить</Button>
       </Modal.Footer>
     </Modal>
   );
