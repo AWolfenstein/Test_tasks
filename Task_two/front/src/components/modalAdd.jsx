@@ -9,13 +9,15 @@ const ModalAddUser = (props) => {
   const [avatar, setAvatar] = useState("");
 
   const changeInput = () => {
-    const newUser = [{
-      first_name: firstName,
-      last_name: lastName,
-      email: email,
-      avatar: avatar,
-    }];
-    props.setUsers(usersArray => usersArray.concat(newUser));
+    const newUser = [
+      {
+        first_name: firstName,
+        last_name: lastName,
+        email: email,
+        avatar: avatar,
+      },
+    ];
+    props.setUsers((usersArray) => usersArray.concat(newUser));
     props.setShow(false);
   };
   return (

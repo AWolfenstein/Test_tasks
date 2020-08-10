@@ -4,9 +4,9 @@ import * as bs from "bootstrap/dist/css/bootstrap.css";
 import "../styles/content.css";
 import Home from "./Home";
 import Users from "./Users";
-import TaskTwo from "./TaskTwo"
-import TaskThree from "./TaskThree"
-import { Container, Row, Col, Nav, Navbar,NavDropdown } from "react-bootstrap";
+import TaskTwo from "./TaskTwo";
+import TaskThree from "./TaskThree";
+import { Container, Row, Col, Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 const Layout = () => (
   <>
@@ -18,12 +18,10 @@ const Layout = () => (
           <Nav.Link href="/">Главная</Nav.Link>
           <Nav.Link href="/employees">Сотрудники</Nav.Link>
           <NavDropdown title="Tasks" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/tasktwo/filter">task_2</NavDropdown.Item>
-          <NavDropdown.Item href="/taskthree">task_3</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">task_4</NavDropdown.Item>
-        </NavDropdown>
+            <NavDropdown.Item href="/tasktwo/filter">task_2</NavDropdown.Item>
+            <NavDropdown.Item href="/taskthree">task_3</NavDropdown.Item>
+          </NavDropdown>
         </Nav>
-       
       </Navbar.Collapse>
     </Navbar>
     <Container>

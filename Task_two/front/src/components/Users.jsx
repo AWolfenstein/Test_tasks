@@ -33,7 +33,7 @@ const Users = (props) => {
         style={{ marginBottom: 20 }}
         onClick={() => setShow(true)}
       >
-       Добавить нового сотрудника
+        Добавить нового сотрудника
       </Button>
       <Cards user={usersArray} deleteUser={deleteUser}></Cards>
       <ModalAddUser

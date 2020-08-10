@@ -4,7 +4,6 @@ import Card from "react-bootstrap/Card";
 import { CardColumns, Button } from "react-bootstrap";
 
 const Cards = (props) => {
-  
   const userCard = (
     <CardColumns>
       {props.user &&
@@ -17,7 +16,10 @@ const Cards = (props) => {
                   {user.first_name + " " + user.last_name}
                 </Card.Title>
                 <Card.Text>Email: {user.email}</Card.Text>
-                <Button variant="danger" onClick={() =>props.deleteUser(index)}>
+                <Button
+                  variant="danger"
+                  onClick={() => props.deleteUser(index)}
+                >
                   Удалить
                 </Button>
               </Card.Body>

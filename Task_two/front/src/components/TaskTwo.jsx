@@ -18,9 +18,13 @@ const TaskTwo = (props) => {
   });
   const chkUnd = typeof state.color !== "undefined";
 
-  useEffect(() => {
-    newQueryUrls();
-  }, [state],console.log("New Url: "+pathname+location));
+  useEffect(
+    () => {
+      newQueryUrls();
+    },
+    [state],
+    console.log("New Url: " + pathname + location)
+  );
 
   const newQueryUrls = () => {
     let new_query = queryString.stringify(state);
@@ -28,7 +32,6 @@ const TaskTwo = (props) => {
       pathname: pathname,
       search: new_query.toString(),
     });
-    
   };
 
   const changeMultiVal = () => {
@@ -75,7 +78,7 @@ const TaskTwo = (props) => {
     }
   };
   const { color, size, manufacturer } = state;
- 
+
   return (
     <div>
       <h1>TaskTwo</h1>
